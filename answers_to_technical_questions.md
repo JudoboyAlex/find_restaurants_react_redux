@@ -8,6 +8,7 @@ I spent about 5 hours on this assignment. I would add the following if I had mor
 * Add form validation logic where if a user inputs return no result, create a pop up message that indicates there were nothing returned.
 * I would consider using Next.js to make sure my contents are crawled by google bots, which improves SEO. 
 * I would definitely style the app better such as adding image of restaurant to the each resturant detial card by retrieving photos from "photo_url" api end point.
+* I would add more unit testing on components and redux.  
 
 ## 2.What was the most useful feature that was added to the latest version of your chosen language? Please include a snippet of code that shows how you've used it.
 
