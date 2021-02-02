@@ -1,38 +1,104 @@
-.App {
+* {
+  -webkit-appearance: none;
+}
+
+body {
+  background-color: #fcf8ec;
+}
+
+.homeContainer {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.restaurantsListContainer {
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.restaurantDetailCard {
+  flex: 1 0 21%;
+  border: 0.3rem solid;
+  width: 20rem;
+  border-radius: 3rem;
+  margin: 1rem;
+  background-color: #8ed6ff;
+  max-width: 17rem;
+  min-height: 13rem;
+  padding: 0.3rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.restaurantsDetailCardContainer {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  text-align: center;
+  margin: 3rem;
 }
 
-.App-link {
-  color: #61dafb;
+form {
+  font-size: 1.5rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+input {
+  height: 2.7rem;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  font-size: 1.3rem;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  font-size: 1.3rem;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  font-size: 1.3rem;
+}
+
+.inputBtn {
+  font-size: 1.1rem;
+  height: 3rem;
+}
+
+.inputLabel {
+  padding-right: 0.7rem;
+}
+
+input[type="text"] {
+  font-size: 1.1rem;
+}
+
+@media only screen and (max-width: 481px) {
+  form {
+    flex-direction: column;
+    display: flex;
+    padding: 1rem;
   }
-  to {
-    transform: rotate(360deg);
+
+  input[type="text"] {
+    margin-top: 1rem;
+  }
+
+  .restaurantsDetailCardContainer {
+    display: block;
+    margin: 1rem;
+    font-size: 1.3rem;
+  }
+
+  .restaurantDetailCard {
+    margin: 0 auto 1rem;
+
+  }
+}
+
+@media screen and (max-width: 540px) and (min-width: 482px) {
+  .restaurantsDetailCardContainer {
+    display: block;
+    margin: 1rem;
+    font-size: 1.3rem;
+  }
+
+  .restaurantDetailCard {
+    margin: 0 auto 1rem;
+  }
+
+  form {
+    margin-bottom: 3rem;
   }
 }
